@@ -108,9 +108,19 @@ button{
     border: none;
     border-radius: 10px;
     color:  #fff;
+    font-weight: bold;
 }
 
 .registro{
     padding: 3rem;
 }
 
+a{
+    text-decoration: none;
+    color: #1888B8;
+}
+
+button:hover{
+    background-color: #cd7259;
+    transition: 0.5s;
+}
