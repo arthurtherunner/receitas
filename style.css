@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&family=Nata+Sans:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Teko:wght@300..700&display=swap');
+
+
 *{
     padding: 0;
     margin: 0;
@@ -7,7 +10,7 @@
 body{
 height: 100vh;
 width: 100vw;
- font-family: 'Inter', sans-serif;
+font-family: poppins;
 }
 
 .container{
@@ -52,7 +55,6 @@ form{
     display: flex;
     flex-direction: column;
     width: 50%;
-   
 }
 
 input[type=email]{
@@ -63,6 +65,7 @@ input[type=email]{
     background-color: #FED8AC;
     border: none;
     border-radius: 10px;
+    outline: none;
 }
 
 input[type=email]::placeholder{
@@ -78,11 +81,25 @@ input[type=password]{
     background-color: #FED8AC;
     border: none;
     border-radius: 10px;
+    outline: none;
+
 }
 
 input[type=password]::placeholder{
     color: #1E1E1E;
     text-align: center;
+}
+
+input[type="email"]:hover{
+    background-color: antiquewhite;
+    height: 60px;
+    transition: 0.5s;
+}
+
+input[type="password"]:hover{
+    background-color: antiquewhite;
+    height: 60px;
+    transition: 0.5s;
 }
 
 .remember{
@@ -124,4 +141,34 @@ a{
 button:hover{
     background-color: #cd7259;
     transition: 0.5s;
+    height: 70px;
+}
+
+h1, h2{
+    position: relative;
+}
+
+h2::after{
+    position: absolute;
+    content: '';
+    background-color: #ff9500;
+    width:9rem;
+    height: 5px;
+    bottom: 0;
+    left: 0;
+}
+
+h1::after{
+    position: absolute;
+    content: '';
+    background-color: #ffc481;
+    width:20.5rem;
+    height: 5px;
+    bottom: 0;
+    left: 0;
+    margin: 3px;
+}
+
+a:hover{
+    text-decoration: underline;
 }
